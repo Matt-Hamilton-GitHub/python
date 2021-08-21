@@ -1,0 +1,28 @@
+def looping():
+    
+    LOOPCIRCLE = 5
+    initialVal = 0
+    tryAgain = 'N'
+    
+
+    
+    while initialVal != LOOPCIRCLE: 
+        
+        num = int(input('Enter a number: '))
+        initialVal= initialVal +1
+        
+        if initialVal == 5: 
+            answer = input('REPEAT ? Y/N')
+            tryAgain = answer.upper() 
+            
+            if tryAgain == 'Y':
+                initialVal = 0
+        
+        if num > 2:
+            print(str(num) +' > 2 ')
+        elif num < 2 :
+            print(str(num) + " < 2")
+        else:
+            print('ERROR OCCURED')
+
+looping()
