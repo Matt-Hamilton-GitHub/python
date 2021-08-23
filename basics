@@ -24,5 +24,6 @@ def looping():
             print(str(num) + " < 2")
         else:
             print('ERROR OCCURED')
+            
 
 looping()
